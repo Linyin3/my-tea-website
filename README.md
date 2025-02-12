@@ -14,6 +14,11 @@
         .tea-card {
             transition: transform 0.3s;
             cursor: pointer;
+            background: #fff; /* 每个产品卡片的背景色 */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
         }
         .tea-card:hover {
             transform: translateY(-5px);
@@ -23,6 +28,16 @@
             border-radius: 10px;
             padding: 15px;
             margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            background-color: #a8d08d; /* 养生茶区域的背景色 */
+            padding: 15px;
+            border-radius: 5px;
+        }
+        /* 确保每个导航项都有相同的间距 */
+        .navbar-nav .nav-item {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -44,19 +59,70 @@
         </div>
     </nav>
 
-    <!-- 产品展示 -->
+    <!-- 养生茶系列 -->
     <div class="container py-5" id="products">
-        <h2 class="text-center mb-4">养生茶系列</h2>
+        <h2 class="text-center section-title mb-4">养生茶系列</h2>
         <div class="row">
+            <!-- 安神助眠茶 -->
             <div class="col-md-4 tea-card">
-                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded">
+                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="安神助眠茶"> <!-- 替换安神助眠茶的图片 -->
                 <h3 class="mt-3">安神助眠茶</h3>
                 <p>主要成分：酸枣仁、茯苓、百合</p >
             </div>
+            <!-- 舒缓解压茶 -->
             <div class="col-md-4 tea-card">
-                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded">
+                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="舒缓解压茶"> <!-- 替换舒缓解压茶的图片 -->
                 <h3 class="mt-3">舒缓解压茶</h3>
                 <p>主要成分：菊花、甘草、薄荷</p >
+            </div>
+        </div>
+    </div>
+
+    <!-- 养生穴位引导 -->
+    <div class="container py-5" id="acupoints">
+        <h2 class="text-center section-title mb-4">养生穴位引导</h2>
+        <div class="row">
+            <!-- 胎充穴 -->
+            <div class="col-md-4 acupoint">
+                < img src="https://via.placeholder.com/300x200" alt="胎充穴"> <!-- 替换胎充穴图片 -->
+                <h3>胎充穴</h3>
+                <p>此穴位有助于调理情绪，缓解压力。</p >
+            </div>
+            <!-- 内关穴 -->
+            <div class="col-md-4 acupoint">
+                < img src="https://via.placeholder.com/300x200" alt="内关穴"> <!-- 替换内关穴图片 -->
+                <h3>内关穴</h3>
+                <p>此穴位有助于缓解焦虑，促进安眠。</p >
+            </div>
+        </div>
+    </div>
+
+    <!-- 按摩手法 -->
+    <div class="container py-5" id="massage-techniques">
+        <h2 class="text-center section-title mb-4">按摩手法</h2>
+        <!-- 视频或者动图 -->
+        <div class="text-center">
+            <h4>点击观看按摩手法视频</h4>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                < img src="https://via.placeholder.com/500x300" alt="按摩手法视频" class="img-fluid rounded">
+            </a >
+            <!-- 或者动图 -->
+            <h4>或者查看动图</h4>
+            < img src="https://via.placeholder.com/500x300" alt="按摩手法动图" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- 商城 -->
+    <div class="container py-5" id="shop">
+        <h2 class="text-center section-title mb-4">商城</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tea-card">
+                    <h3>茶包购买</h3>
+                    <p>点击购买各种养生茶包，享受健康生活。</p >
+                    <!-- 假设是一个商城链接 -->
+                    
+                </div>
             </div>
         </div>
     </div>
