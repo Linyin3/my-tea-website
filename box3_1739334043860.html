@@ -1,0 +1,103 @@
+&lt;!DOCTYPE html&gt;<br />
+&lt;html lang="zh-CN"&gt;<br />
+&lt;head&gt;<br />
+&nbsp; &nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp; &nbsp; &lt;title&gt;情绪养生茶包&lt;/title&gt;<br />
+&nbsp; &nbsp; &lt;!-- 引入 Bootstrap 简化样式 --&gt;<br />
+&nbsp; &nbsp; &lt;link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"&gt;<br />
+&nbsp; &nbsp; &lt;style&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; /* 自定义样式 */<br />
+&nbsp; &nbsp; &nbsp; &nbsp; body {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #f0f5e9; /* 柔和的绿色背景 */<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: 'Microsoft YaHei', sans-serif;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .tea-card {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: transform 0.3s;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .tea-card:hover {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: translateY(-5px);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .acupoint {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #fff;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 10px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 15px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 10px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &lt;/style&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&nbsp; &nbsp; &lt;!-- 导航栏 --&gt;<br />
+&nbsp; &nbsp; &lt;nav class="navbar navbar-expand-lg bg-success text-white p-3"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="container"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="navbar-brand text-white" href="#"&gt;静心养生茶&lt;/a&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class="navbar-nav"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="nav-item"&gt;&lt;a class="nav-link text-white" href="#products"&gt;产品&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="nav-item"&gt;&lt;a class="nav-link text-white" href="#acupoints"&gt;穴位引导&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="nav-item"&gt;&lt;a class="nav-link text-white" href="#shop"&gt;商城&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &lt;/nav&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;!-- 产品展示 --&gt;<br />
+&nbsp; &nbsp; &lt;div class="container py-5" id="products"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-center mb-4"&gt;养生茶系列&lt;/h2&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="row"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-md-4 tea-card"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="https://via.placeholder.com/300x200" class="img-fluid rounded"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="mt-3"&gt;安神助眠茶&lt;/h3&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;主要成分：酸枣仁、茯苓、百合&lt;/p&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-md-4 tea-card"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="https://via.placeholder.com/300x200" class="img-fluid rounded"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="mt-3"&gt;疏肝解郁茶&lt;/h3&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;主要成分：玫瑰花、陈皮、枸杞&lt;/p&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &lt;/div&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;!-- 穴位引导 --&gt;<br />
+&nbsp; &nbsp; &lt;div class="container py-5 bg-white" id="acupoints"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-center mb-4"&gt;推荐养生穴位&lt;/h2&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="row"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-md-6 acupoint"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;太冲穴&lt;/h4&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;位置：足背第一、二跖骨结合部前方凹陷处&lt;/p&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="btn btn-outline-success" onclick="showMassageTip()"&gt;查看按摩手法&lt;/button&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-md-6 acupoint"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;内关穴&lt;/h4&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;位置：前臂掌侧，腕横纹上2寸&lt;/p&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="btn btn-outline-success" onclick="showMassageTip()"&gt;查看按摩手法&lt;/button&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />
+&nbsp; &nbsp; &lt;/div&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;!-- 商城按钮 --&gt;<br />
+&nbsp; &nbsp; &lt;div class="container text-center py-5" id="shop"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;立即购买&lt;/h2&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="btn btn-success btn-lg mt-3" onclick="goToShop()"&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 进入商城 →&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;<br />
+&nbsp; &nbsp; &lt;/div&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;!-- 引入 Bootstrap JS --&gt;<br />
+&nbsp; &nbsp; &lt;script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;<br />
+&nbsp; &nbsp; &lt;script&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; // 简单交互功能<br />
+&nbsp; &nbsp; &nbsp; &nbsp; function showMassageTip() {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert("按摩手法：用拇指按压穴位，每次3-5分钟，每日2次");<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; function goToShop() {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 实际开发需跳转到商城页面<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert("商城功能开发中...");<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &lt;/script&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
