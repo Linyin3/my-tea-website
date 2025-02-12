@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>情绪养生茶包</title>
     <!-- 引入 Bootstrap 简化样式 -->
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -14,11 +15,6 @@
         .tea-card {
             transition: transform 0.3s;
             cursor: pointer;
-            background: #fff; /* 每个产品卡片的背景色 */
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px 0;
         }
         .tea-card:hover {
             transform: translateY(-5px);
@@ -28,16 +24,24 @@
             border-radius: 10px;
             padding: 15px;
             margin: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .section-title {
-            background-color: #a8d08d; /* 养生茶区域的背景色 */
-            padding: 15px;
-            border-radius: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        /* 确保每个导航项都有相同的间距 */
-        .navbar-nav .nav-item {
-            margin-left: 20px;
+        .product-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            width: 80%;
+            height: 500px;
         }
     </style>
 </head>
@@ -54,6 +58,7 @@
                     <li class="nav-item"><a class="nav-link text-white" href="#products">产品</a ></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#acupoints">穴位引导</a ></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#shop">商城</a ></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#devices">养生设备</a ></li>
                 </ul>
             </div>
         </div>
@@ -61,74 +66,109 @@
 
     <!-- 养生茶系列 -->
     <div class="container py-5" id="products">
-        <h2 class="text-center section-title mb-4">养生茶系列</h2>
+        <h2 class="section-title">养生茶系列</h2>
         <div class="row">
-            <!-- 安神助眠茶 -->
-            <div class="col-md-4 tea-card">
-                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="安神助眠茶"> <!-- 替换安神助眠茶的图片 -->
+            <div class="col-md-4 tea-card" data-bs-toggle="modal" data-bs-target="#productModal1">
+                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded product-image" alt="安神助眠茶">
                 <h3 class="mt-3">安神助眠茶</h3>
                 <p>主要成分：酸枣仁、茯苓、百合</p >
             </div>
-            <!-- 舒缓解压茶 -->
-            <div class="col-md-4 tea-card">
-                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="舒缓解压茶"> <!-- 替换舒缓解压茶的图片 -->
-                <h3 class="mt-3">舒缓解压茶</h3>
-                <p>主要成分：菊花、甘草、薄荷</p >
+            <div class="col-md-4 tea-card" data-bs-toggle="modal" data-bs-target="#productModal2">
+                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded product-image" alt="树干解育茶">
+                <h3 class="mt-3">树干解育茶</h3>
+                <p>主要成分：枸杞、桂圆、菊花</p >
             </div>
         </div>
     </div>
 
-    <!-- 养生穴位引导 -->
+    <!-- 养生设备模块 -->
+    <div class="container py-5" id="devices">
+        <h2 class="section-title">养生设备</h2>
+        <p>点击下方视频查看如何使用养生设备进行养生护理。</p >
+        <div class="video-container">
+            <!-- 可以替换为你想要的视频链接 -->
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 穴位引导模块 -->
     <div class="container py-5" id="acupoints">
-        <h2 class="text-center section-title mb-4">养生穴位引导</h2>
+        <h2 class="section-title">养生穴位引导</h2>
         <div class="row">
-            <!-- 胎充穴 -->
             <div class="col-md-4 acupoint">
-                < img src="https://via.placeholder.com/300x200" alt="胎充穴"> <!-- 替换胎充穴图片 -->
-                <h3>胎充穴</h3>
-                <p>此穴位有助于调理情绪，缓解压力。</p >
+                <h4>胎充穴</h4>
+                < img src="https://via.placeholder.com/300x200" alt="胎充穴" class="img-fluid rounded">
             </div>
-            <!-- 内关穴 -->
             <div class="col-md-4 acupoint">
-                < img src="https://via.placeholder.com/300x200" alt="内关穴"> <!-- 替换内关穴图片 -->
-                <h3>内关穴</h3>
-                <p>此穴位有助于缓解焦虑，促进安眠。</p >
+                <h4>内关穴</h4>
+                < img src="https://via.placeholder.com/300x200" alt="内关穴" class="img-fluid rounded">
             </div>
         </div>
     </div>
 
-    <!-- 按摩手法 -->
-    <div class="container py-5" id="massage-techniques">
-        <h2 class="text-center section-title mb-4">按摩手法</h2>
-        <!-- 视频或者动图 -->
-        <div class="text-center">
-            <h4>点击观看按摩手法视频</h4>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                < img src="https://via.placeholder.com/500x300" alt="按摩手法视频" class="img-fluid rounded">
-            </a >
-            <!-- 或者动图 -->
-            <h4>或者查看动图</h4>
-            < img src="https://via.placeholder.com/500x300" alt="按摩手法动图" class="img-fluid rounded">
-        </div>
-    </div>
-
-    <!-- 商城 -->
+    <!-- 商城模块 -->
     <div class="container py-5" id="shop">
-        <h2 class="text-center section-title mb-4">商城</h2>
+        <h2 class="section-title">商城</h2>
+        <p>浏览我们的养生茶包和设备，快速购买。</p >
+        <!-- 在这里添加商城商品内容 -->
         <div class="row">
             <div class="col-md-4">
-                <div class="tea-card">
-                    <h3>茶包购买</h3>
-                    <p>点击购买各种养生茶包，享受健康生活。</p >
-                    <!-- 假设是一个商城链接 -->
-                    
+                <div class="card">
+                    < img src="https://via.placeholder.com/300x200" class="card-img-top" alt="商品1">
+                    <div class="card-body">
+                        <h5 class="card-title">养生茶包</h5>
+                        <p class="card-text">经典养生茶包，帮助舒缓身心。</p >
+                        立即购买
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    < img src="https://via.placeholder.com/300x200" class="card-img-top" alt="商品2">
+                    <div class="card-body">
+                        <h5 class="card-title">养生按摩设备</h5>
+                        <p class="card-text">高效养生按摩设备，放松你的疲劳。</p >
+                        立即购买
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 引入 Bootstrap JavaScript -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- 模态框 - 安神助眠茶 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModal1Label">安神助眠茶</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="安神助眠茶">
+                    <p>安神助眠茶的配方包括酸枣仁、茯苓和百合，能够帮助安抚神经，促进睡眠。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 - 树干解育茶 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModal2Label">树干解育茶</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    < img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="树干解育茶">
+                    <p>树干解育茶由枸杞、桂圆和菊花混合而成，帮助舒缓压力，提升免疫力。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Bootstrap JS 和 Popper -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
