@@ -81,12 +81,12 @@
         <h2 class="section-title">养生产品</h2>
         <div class="row">
             <div class="col-md-4 tea-card" data-bs-toggle="modal" data-bs-target="#productModal1">
-                < img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg" class="img-fluid rounded product-image" alt="安神助眠茶">
+                <img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg" class="img-fluid rounded product-image" alt="安神助眠茶">
                 <h3 class="mt-3">安神助眠茶</h3>
                 <p>主要成分：酸枣仁、茯苓、百合</p >
             </div>
             <div class="col-md-4 tea-card" data-bs-toggle="modal" data-bs-target="#productModal2">
-                < img src="https://via.placeholder.com/300x200" class="img-fluid rounded product-image" alt="树干解育茶">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid rounded product-image" alt="树干解育茶">
                 <h3 class="mt-3">树干解育茶</h3>
                 <p>主要成分：枸杞、桂圆、菊花</p >
             </div>
@@ -100,11 +100,11 @@
         <div class="row">
             <div class="col-md-4 acupoint">
                 <h4>胎充穴</h4>
-                < img src="https://via.placeholder.com/300x200" alt="胎充穴" class="img-fluid rounded">
+                <img src="https://via.placeholder.com/300x200" alt="胎充穴" class="img-fluid rounded">
             </div>
             <div class="col-md-4 acupoint">
                 <h4>内关穴</h4>
-                < img src="https://via.placeholder.com/300x200" alt="内关穴" class="img-fluid rounded">
+                <img src="https://via.placeholder.com/300x200" alt="内关穴" class="img-fluid rounded">
             </div>
         </div>
     </div>
