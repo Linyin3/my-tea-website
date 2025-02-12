@@ -81,7 +81,7 @@
         <h2 class="section-title">养生产品</h2>
         <div class="row">
             <div class="col-md-4 tea-card" data-bs-toggle="modal" data-bs-target="#productModal1">
-                < img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"class="img-fluid rounded product-image" alt="安神助眠茶">
+                < img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg" class="img-fluid rounded product-image" alt="安神助眠茶">
                 <h3 class="mt-3">安神助眠茶</h3>
                 <p>主要成分：酸枣仁、茯苓、百合</p >
             </div>
