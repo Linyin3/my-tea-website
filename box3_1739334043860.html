@@ -84,13 +84,13 @@
         <div class="row">
             <!-- 太冲穴 -->
             <div class="col-md-4 acupoint">
-                <img src="https://tse2.mm.bing.net/th/id/OIP.YhJPC5tC2ybPpvQeUcA-8wHaDt?w=302&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="太冲穴"> <!-- 替换太冲穴图片 -->
+                <img src="https://images.pexels.com/photos/5949005/pexels-photo-5949005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="太冲穴"> <!-- 替换太冲穴图片 -->
                 <h3>太冲穴</h3>
                 <p>此穴位有助于调理情绪，缓解压力。</p >
             </div>
             <!-- 内关穴 -->
             <div class="col-md-4 acupoint">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.3TmYFVFX5Fh8sNqh3m7L9wHaEW?w=299&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="内关穴"> <!-- 替换内关穴图片 -->
+                <img src="https://images.pexels.com/photos/5949005/pexels-photo-5949005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="内关穴"> <!-- 替换内关穴图片 -->
                 <h3>内关穴</h3>
                 <p>此穴位有助于缓解焦虑，促进安眠。</p >
             </div>
